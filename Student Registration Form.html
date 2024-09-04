@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="date"], input[type="file"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .checkbox-group, .radio-group {
+            display: flex;
+            justify-content: space-around;
+        }
+        .checkbox-group label, .radio-group label {
+            margin-right: 15px;
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .submit-button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>
+        <center>FATHUL MAJIYD ACADEMY FALGORE</center> 
+    </h1>
+    <h2>Student Registration Form 2024/2025 Session</h2>
+    <form action="https://drive.google.com/drive/u/1/folders/1Pr635bIC-1qSUum__T3ivSDpqpUCxsHrJ-Mw5S61BZX0GE9u-YfXiOz4opKkhmbw9fQ45b2t" method="post" enctype="multipart/form-data">
+
+    <!-- Section 1: Student Personal Information -->
+    <div class="section">
+        <h3>SECTION 1. STUDENT PERSONAL INFORMATION</h3>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="middle-name">Middle Name:</label>
+        <input type="text" id="middle-name" name="middle-name">
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="place-of-birth">Place of Birth:</label>
+        <input type="text" id="place-of-birth" name="place-of-birth" required>
+
+        <label for="lga">Local Government:</label>
+        <input type="text" id="lga" name="lga" required>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+
+        <label for="current-address">Current Address:</label>
+        <input type="text" id="current-address" name="current-address" required>
+
+        <label for="passport">Passport:</label>
+        <input type="file" id="passport" name="passport" accept="image/*">
+    </div>
+
+    <!-- Section 2: Parent/Guardian Information -->
+    <div class="section">
+        <h3>SECTION 2. PARENT/GUARDIAN INFORMATION</h3>
+        <label for="parent-first-name">First Name:</label>
+        <input type="text" id="parent-first-name" name="parent-first-name" required>
+
+        <label for="parent-middle-name">Middle Name:</label>
+        <input type="text" id="parent-middle-name" name="parent-middle-name">
+
+        <label for="parent-last-name">Last Name:</label>
+        <input type="text" id="parent-last-name" name="parent-last-name" required>
+
+        <label for="father-occupation">Father's Occupation:</label>
+        <input type="text" id="father-occupation" name="father-occupation">
+
+        <label for="father-phone">Father's Mobile Phone Number:</label>
+        <input type="text" id="father-phone" name="father-phone" required>
+
+        <label for="mother-full-name">Mother's Full Name:</label>
+        <input type="text" id="mother-full-name" name="mother-full-name" required>
+
+        <label for="home-address">Home Address:</label>
+        <input type="text" id="home-address" name="home-address" required>
+    </div>
+
+    <!-- Section 3: Medical Information -->
+    <div class="section">
+        <h3>SECTION 3. MEDICAL INFORMATION</h3>
+        <label for="medical-condition">Does the student have any medical conditions or allergies?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="medical-condition" value="yes"> Yes</label>
+            <label><input type="radio" name="medical-condition" value="no"> No</label>
+        </div>
+        <textarea id="medical-details" name="medical-details" rows="3" placeholder="If Yes, please specify"></textarea>
+
+        <label for="regular-medication">Is the student on any regular medication?</label>
+        <div class="radio-group">
+            <label><input type="radio" name="regular-medication" value="yes"> Yes</label>
+            <label><input type="radio" name="regular-medication" value="no"> No</label>
+        </div>
+        <textarea id="medication-details" name="medication-details" rows="3" placeholder="If Yes, please specify"></textarea>
+    </div>
+
+    <!-- Section 4: Student Undertaking -->
+    <div class="section">
+        <h3>SECTION 4. STUDENT UNDERTAKING</h3>
+        <p>I hereby undertake the following:</p>
+        <ul>
+            <li>Academic Responsibility:</li>
+            <ol>
+                <li>
+                    I will strive to maintain good academic performance and complete all assignments, projects, and homework on time.
+                </li>
+                <li>
+                    I will attend all classes regularly and punctually.
+                </li>
+            </ol>
+            <li>Code of Conduct:</li>
+            <ol>
+                <li>
+                    I will abide by the school’s rules and regulations and will conduct myself in a manner that reflects respect for others and the school community. 
+                </li>
+                <li>
+                    I will avoid any form of bullying, harassment, or disruptive behaviour.
+                </li>
+            </ol>
+            <li>School Property:</li>
+            <ol>
+                <li>
+                    I will take care of school property and facilities and understand that I will be held responsible for any damage caused by my actions.
+                </li>
+            </ol>
+            <li>Attendance:</li>
+            <ol>
+                <li>
+                    I will attend school regularly and will provide a valid reason for any absence.
+                </li>
+            </ol>
+            <li>Uniform and Appearance:</li>
+            <ol>
+                <li>
+                    I will wear the prescribed school uniform and maintain a neat appearance at all times.
+                </li>
+            </ol>
+            <li>Use of Technology:</li>
+            <ol>
+                <li>
+                    I will use the school's technology resources responsibly and will refrain from accessing inappropriate content.
+                </li>
+            </ol>
+            <li>Respect for Peers and Staff:</li>
+            <ol>
+                <li>
+                    I will show respect to my peers, teachers, and all school staff, recognizing the value of kindness and empathy in all interactions.
+                </li>
+            </ol>
+        </ul>
+        <input type="checkbox" name="student-undertaking" required> I agree to the terms
+    </div>
+
+    <!-- Section 5: Parent/Guardian Undertaking -->
+    <div class="section">
+        <h3>SECTION 5. PARENT/GUARDIAN UNDERTAKING</h3>
+        <p>I, the parent/guardian of the above-named child, hereby undertake the following:</p>
+        <ul>
+            <li>Support for Academic Progress:</li>
+            <ol>
+                <li>
+                    I will support my child's academic endeavours by encouraging regular study habits and ensuring the completion of assignments and homework.
+                </li>
+                <li>
+                    I will attend parent-teacher meetings and engage with the school regarding my child’s academic progress.
+                </li>
+            </ol>
+            <li>Adherence to School Policies:</li>
+            <ol>
+                <li>
+                    I will ensure that my child follows the school’s rules and regulations and will cooperate with the school in enforcing them.
+                </li>
+                <li>
+                    I understand the consequences of my child's non-compliance with the school's code of conduct and policies.
+                </li>
+            </ol>
+            <li>Attendance and Punctuality:</li>
+            <ol>
+                <li>
+                    I will ensure that my child attends school regularly and punctually and will provide valid reasons for any absence.
+                </li>
+            </ol>
+            <li>Uniform and Appearance:</li>
+            <ol>
+                <li>
+                    I will ensure that my child wears the school uniform and maintains a tidy appearance as required by the school.
+                </li>
+            </ol>
+                </li>
+            <li>Communication:</li>
+            <ol>
+                <li>
+                    I will maintain open communication with the school regarding any issues that may affect my child’s learning or behaviour.
+                </li>
+                <li>
+                    I will keep the school informed of any changes in contact details or emergency contact information.
+                </li>
+            </ol>
+            <li>Payment of Fees:</li>
+            <ol>
+                <li>
+                    I will ensure that all school fees and other related expenses are paid on time as per the school’s fee schedule.
+                </li>
+            </ol>
+            <li>Support for Extracurricular Activities:</li>
+            <ol>
+                <li>
+                    I will encourage my child to participate in extracurricular activities and support the school in organizing these events.
+                </li>
+            </ol>
+            <li>Responsibility for Property:</li>
+            <ol>
+                <li>
+                    I understand that I am responsible for any damage caused by my child to school property and will bear the cost of repairs or replacement.
+                </li>
+            </ol>
+        </ul>
+        <input type="checkbox" name="parent-undertaking" required> I agree to the terms
+    </div>
+
+    <!-- Section 6: Declaration -->
+    <div class="section">
+        <h3>SECTION 6. DECLARATION</h3>
+        <p>I, the undersigned, declare that all the information provided in this application form is true and correct to the best of my knowledge.</p>
+        <input type="checkbox" name="declaration" required> I agree to the terms
+    </div>
+
+    <!-- Section 7: School Payment -->
+    <div class="section">
+        <h3>SECTION 7. SCHOOL PAYMENT FOR THE 2024/2025 ACADEMIC SESSION</h3>
+        <p>Registration = ₦2,000 for the new intake.</p>
+        <p>Termly school fees = ₦2,800.</p>
+        <p>School badge = ₦200.</p>
+        <p>Total = ₦5,000.</p>
+    </div>
+
+    <!-- Section 8: Payment Method -->
+    <div class="section">
+        <h3>SECTION 8: PAYMENT METHOD</h3>
+        <label for="payment-method">Payment Method:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="payment-method" value="cash" required> Cash</label>
+            <label><input type="radio" name="payment-method" value="bank" required> Bank</label>
+            </div>
+
+        <!-- Section for Bank Receipt Upload if Bank Payment is Chosen -->
+        <div id="bank-receipt-section" style="display:none;">
+            <label for="bank-receipt">Upload Bank Receipt:</label>
+            <input type="file" id="bank-receipt" name="bank-receipt" accept="image/*,application/pdf">
+        </div>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="submit-button">Submit Registration</button>
+</div>
+</form>
+
+<script>
+    // JavaScript to show/hide the bank receipt upload section based on payment method
+    document.querySelectorAll('input[name="payment-method"]').forEach((elem) => {
+        elem.addEventListener("change", function(event) {
+            let receiptSection = document.getElementById('bank-receipt-section');
+            if (event.target.value === 'bank') {
+                receiptSection.style.display = 'block';
+            } else {
+                receiptSection.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
